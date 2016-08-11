@@ -12,10 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 
+import java.util.ArrayList;
+
 
 public class TravelRequest extends Activity {
 
     private Button submit;
+    double totalBudget = 0.00;
+    ArrayList BUgroup = new ArrayList();
 
     public void onCreate(Bundle savedInstanceState) {
 
@@ -35,6 +39,17 @@ public class TravelRequest extends Activity {
             }
         });
     }
+
+
+    /*public void budget(EditText view, View view2, ArrayList list){
+
+        EditText trip_budget = (EditText) findViewById(R.id.est_trip_budget);
+        String string_budget = (trip_budget.getText()).toString();
+
+        //double num_budget = Double.parseDouble(trip_budget.getText()).toString();
+
+
+    }*/
 
 
 
